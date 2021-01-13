@@ -42,13 +42,16 @@ main ul li img{
     width: 100%;
 }
 main ul li{
-    flex-shrink: 0;/* autoriser les éléments plus petits*/
+    flex-shrink: 1;/* autoriser les éléments plus petits*/
     flex-grow: 1; /* autorise à ajouter des éléments plus grand */
     flex-basis: calc(100% / 3 - 1rem);
     margin: 0 1rem 1rem 0;
 }
 main ul li:nth-of-type(7){
     flex-basis: calc(100% / 1 - 1rem);
+}
+main ul li:nth-of-type(8),main ul li:nth-of-type(9){
+    flex-basis: calc(100% / 2 - 1rem);
 }
 footer{
    
